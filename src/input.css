@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.lt_img_1 {
+    height: 488px;
+    width: 240px;
+}
+
+.lt_img_2 {
+    height: 210px;
+    width: 390px;
+}
+
+.lt_img_3 {
+    height: 376px;
+    width: 306px;
+}
+
+.lt_img_4 {
+    height: 246px;
+    width: 369px;
+}
+
+.lt_img_5 {
+    height: 519px;
+    width: 777px;
+}
+
+.lt_img_6 {
+    height: 319px;
+    width: 478px;
+}
+
+.lt_img_7 {
+    height: 350px;
+    width: 542px;
+}
+
+.lt_img_8 {
+    height: 600px;
+    width: 400px;
+}
+
+.lt_img_9 {
+    height: 420px;
+    width: 280px;
+}
+
+.lt_img_10 {
+    height: 231px;
+    width: 192px;
+}
+
+.lt_img_11 {
+    height: 220px;
+    width: 651px;
+}
+
+.mem_img_12{
+    width: 1642px;
+}
