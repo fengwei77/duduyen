@@ -81,3 +81,29 @@
     left: 58%;
 }
 
+.illus{
+    width:360px;
+    height:76px;
+}
+.room1{
+    width:683px;
+    height:475px;
+}
+.room2{
+    width:599px;
+    height:468px;
+}
+.room3{
+    width:344px;
+    height:295px;
+}
+
+.room_txt_1{
+    width:668px;
+    height:224px;
+}
+
+.room_txt_2{
+    width:567px;
+    height:245px;
+}
