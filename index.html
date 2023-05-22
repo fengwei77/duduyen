@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <title>篤篤源</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
 <!--<div class=" bg-cover bg-no-repeat bg-center" style="background-image: url('assets/images/bg.jpg');"></div>-->
@@ -217,18 +218,18 @@
         <div class="absolute flex flex-wrap w-full justify-center transform -translate-x-1/2
          sm:left-10/12 md:left-9/12  lg:left-9/12 xl:top-8/48  xl:left-1/2 ">
             <div class="flex justify-center  ">
-                <div class="lt_img_12 pt-12 flex-auto pr-20">
+                <div class=" pt-12 flex-auto pr-20">
                     <img src="assets/images/m_sketch_1.png" alt="圖片">
                 </div>
-                <div class="lt_img_12 pt-12 flex-auto">
+                <div class=" pt-12 flex-auto">
                     <img src="assets/images/m_sketch_txt_1.png" alt="圖片">
                 </div>
             </div>
             <div class="flex justify-center ">
-                <div class="lt_img_12 pt-12 flex-auto pr-20">
+                <div class=" pt-12 flex-auto pr-20">
                     <img src="assets/images/m_sketch_txt_2.png" alt="圖片">
                 </div>
-                <div class="lt_img_12 pt-12">
+                <div class=" pt-12">
                     <img src="assets/images/m_sketch_2.png" alt="圖片">
                 </div>
             </div>
@@ -267,18 +268,18 @@
         <div class="absolute flex flex-wrap w-full justify-center transform -translate-x-1/2
          sm:left-10/12 md:left-9/12  lg:left-9/12 xl:top-38/48  xl:left-1/2 ">
             <div class="flex justify-center  ">
-                <div class="lt_img_12 pt-20 flex-auto pr-20">
+                <div class=" pt-20 flex-auto pr-20">
                     <img src="assets/images/room1.png" alt="圖片">
                 </div>
-                <div class="lt_img_12 pt-20 flex-auto">
+                <div class=" pt-20 flex-auto">
                     <img src="assets/images/room_txt_1.png" alt="圖片">
                 </div>
             </div>
             <div class="flex justify-center">
-                <div class="lt_img_12 pt-20 flex-auto pr-20">
+                <div class=" pt-20 flex-auto pr-20">
                     <img src="assets/images/room_txt_2.png" alt="圖片">
                 </div>
-                <div class="lt_img_12 pt-12">
+                <div class=" pt-12">
                     <img src="assets/images/room2.png" alt="圖片">
                 </div>
             </div>
@@ -293,30 +294,22 @@
 </section>
 
 <section id="contact" class="relative">
-    <div class="relative flex xl:h-[1050px] ">
+    <div class="relative flex xl:h-[1050px] w-full">
         <div class="absolute  flex justify-center transform -translate-x-1/2 sm:left-10/12 md:left-9/12  lg:left-9/12 xl:top-2/48  xl:left-1/2 ">
-
-            <div class="lt_img_12 pt-12 ">
+            <div class=" pt-12 ">
                 <img src="assets/images/contact.png" alt="圖片">
             </div>
         </div>
         <div class="absolute  flex justify-center transform -translate-x-1/2 sm:left-10/12 md:left-9/12  lg:left-8/12 xl:top-7/48  xl:left-1/2 ">
-            <div class="lt_img_12 pt-12">
+            <div class="pt-12">
                 <img src="assets/images/booking.png" alt="圖片">
             </div>
         </div>
-        <div class="absolute  flex justify-center transform -translate-x-1/2 sm:left-10/12 md:left-9/12  lg:left-9/12 xl:top-15/48  xl:left-1/2  w-full">
-
-            <div class="flex justify-center ">
-                <div class="lt_img_12 pt-12">
-                    <img src="assets/images/gmap.png" alt="圖片" class="xl:w-[1920px]">
-                </div>
-            </div>
-        </div>
+        <div id="map" class="xl:top-17/48 w-full xl:h-31/48 "></div>
     </div>
 </section>
-<footer id="footer" class="relative bg-white  flex">
-    <div class="relative flex xl:h-[280px] ">
+<footer id="footer" class="relative bg-white flex">
+    <div class="relative flex xl:h-[280px] overflow-hidden">
         <div class="relative pt-20 pl-24">
             <div class="">
                 <img src="assets/images/footer_left.png">
@@ -334,5 +327,22 @@
         </div>
     </div>
 </footer>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzuazfEr3b3WWFfgj5QH6mExe_hklIh6M&callback=initMap&v=weekly"
+        defer
+></script>
+<script>
+    function initMap() {
+        new google.maps.Map(document.getElementById("map"), {
+            mapId: "a5ca9847215a8070",
+            center: { lat: 24.776239955718744, lng: 121.07518797974771 },
+            zoom: 16,
+        });
+    }
+
+    window.initMap = initMap;
+    console.log("initMap");
+
+</script>
 </body>
 </html>
