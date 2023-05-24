@@ -538,6 +538,10 @@ video {
   left: 50%;
 }
 
+.left-10\/12 {
+  left: 83.333333%;
+}
+
 .left-12\/48 {
   left: 25%;
 }
@@ -552,6 +556,10 @@ video {
 
 .left-7\/12 {
   left: 58.333333%;
+}
+
+.left-7\/24 {
+  left: 29.166667%;
 }
 
 .left-8 {
@@ -578,8 +586,20 @@ video {
   top: 33.333333%;
 }
 
+.top-11\/24 {
+  top: 45.833333%;
+}
+
+.top-15\/24 {
+  top: 62.5%;
+}
+
 .top-24 {
   top: 6rem;
+}
+
+.top-25\/48 {
+  top: 52.083333%;
 }
 
 .top-6\/24 {
@@ -590,24 +610,112 @@ video {
   top: 16.666667%;
 }
 
-.left-7\/24 {
-  left: 29.166667%;
+.left-35\/48 {
+  left: 72.916667%;
 }
 
-.top-11\/24 {
-  top: 45.833333%;
+.left-5\/48 {
+  left: 10.416667%;
 }
 
-.left-10\/12 {
-  left: 83.333333%;
+.top-16\/48 {
+  top: 33.333333%;
 }
 
-.top-15\/24 {
+.top-19\/48 {
+  top: 39.583333%;
+}
+
+.top-34\/48 {
+  top: 70.833333%;
+}
+
+.left-28\/48 {
+  left: 58.333333%;
+}
+
+.top-23\/48 {
+  top: 47.916667%;
+}
+
+.top-30\/48 {
   top: 62.5%;
 }
 
-.top-25\/48 {
-  top: 52.083333%;
+.top-40\/48 {
+  top: 83.333333%;
+}
+
+.left-19\/48 {
+  left: 39.583333%;
+}
+
+.left-6\/24 {
+  left: 25%;
+}
+
+.left-40\/48 {
+  left: 83.333333%;
+}
+
+.top-1\/48 {
+  top: 2.083333%;
+}
+
+.top-12\/48 {
+  top: 25%;
+}
+
+.top-2\/48 {
+  top: 4.166667%;
+}
+
+.top-4\/48 {
+  top: 8.333333%;
+}
+
+.top-24\/48 {
+  top: 50%;
+}
+
+.top-44\/48 {
+  top: 91.666667%;
+}
+
+.top-11\/48 {
+  top: 22.916667%;
+}
+
+.top-15\/48 {
+  top: 31.25%;
+}
+
+.top-28\/48 {
+  top: 58.333333%;
+}
+
+.top-36\/48 {
+  top: 75%;
+}
+
+.left-21\/48 {
+  left: 43.75%;
+}
+
+.top-38\/48 {
+  top: 79.166667%;
+}
+
+.top-46\/48 {
+  top: 95.833333%;
+}
+
+.top-7\/48 {
+  top: 14.583333%;
+}
+
+.top-17\/48 {
+  top: 35.416667%;
 }
 
 .z-0 {
@@ -662,6 +770,30 @@ video {
   height: 100%;
 }
 
+.h-31\/48 {
+  height: 64.583333%;
+}
+
+.h-\[280px\] {
+  height: 280px;
+}
+
+.h-\[1050px\] {
+  height: 1050px;
+}
+
+.h-\[850px\] {
+  height: 850px;
+}
+
+.h-\[4850px\] {
+  height: 4850px;
+}
+
+.h-\[4050px\] {
+  height: 4050px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -680,6 +812,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .flex-1 {
@@ -769,6 +905,14 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .lt_img_1 {
@@ -955,6 +1099,10 @@ video {
     height: 6250px;
   }
 
+  .md\:h-\[5250px\] {
+    height: 5250px;
+  }
+
   .md\:w-2\/3 {
     width: 66.666667%;
   }
@@ -1007,6 +1155,54 @@ video {
 
   .lg\:h-\[6250px\] {
     height: 6250px;
+  }
+
+  .lg\:h-\[2650px\] {
+    height: 2650px;
+  }
+
+  .lg\:h-\[3000px\] {
+    height: 3000px;
+  }
+
+  .lg\:h-\[3400px\] {
+    height: 3400px;
+  }
+
+  .lg\:h-\[5250px\] {
+    height: 5250px;
+  }
+
+  .lg\:h-\[850px\] {
+    height: 850px;
+  }
+
+  .lg\:h-\[1800px\] {
+    height: 1800px;
+  }
+
+  .lg\:h-\[5850px\] {
+    height: 5850px;
+  }
+
+  .lg\:h-\[5550px\] {
+    height: 5550px;
+  }
+
+  .lg\:h-\[5050px\] {
+    height: 5050px;
+  }
+
+  .lg\:h-\[4850px\] {
+    height: 4850px;
+  }
+
+  .lg\:h-\[4050px\] {
+    height: 4050px;
+  }
+
+  .lg\:h-\[5450px\] {
+    height: 5450px;
   }
 
   .lg\:w-2\/3 {
@@ -1145,10 +1341,6 @@ video {
     top: 50%;
   }
 
-  .xl\:top-25\/48 {
-    top: 52.083333%;
-  }
-
   .xl\:top-28\/48 {
     top: 58.333333%;
   }
@@ -1197,6 +1389,10 @@ video {
     top: 16.666667%;
   }
 
+  .xl\:top-25\/48 {
+    top: 52.083333%;
+  }
+
   .xl\:h-31\/48 {
     height: 64.583333%;
   }
@@ -1233,6 +1429,10 @@ video {
     width: 95.833333%;
   }
 
+  .xl\:w-full {
+    width: 100%;
+  }
+
   .xl\:-translate-x-1\/2 {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1241,6 +1441,14 @@ video {
   .xl\:-translate-y-1\/2 {
     --tw-translate-y: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .xl\:pl-20 {
+    padding-left: 5rem;
   }
 }
 
