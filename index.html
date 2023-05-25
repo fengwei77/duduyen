@@ -6,6 +6,7 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>篤篤源</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
 </head>
 <body>
 <!--<div class=" bg-cover bg-no-repeat bg-center" style="background-image: url('assets/images/bg.jpg');"></div>-->
@@ -20,20 +21,20 @@
             <div class="flex justify-end top-0 z-50 cursor-pointer">
                 <nav>
                     <button class="w-20 h-20 relative focus:outline-none  rounded" @click="open = !open">
-                        <div class="block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
-                            <span class="block absolute h-[1px] w-10 text-white bg-current transform transition duration-500 ease-in-out"
-                                  :class="{'rotate-45': open,' -translate-y-1.5': !open ,'text-black': open}"></span>
-                            <span class="block absolute h-[1px] w-10 text-white bg-current   transform transition duration-500 ease-in-out"
+                        <div class="block w-5 absolute left-4 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                            <span class="block absolute h-[3px] w-10 opacity-80 text-white bg-current transform transition duration-500 ease-in-out"
+                                  :class="{'rotate-45': open,' -translate-y-1.5': !open ,' text-black': open ,'text-white': !open}"></span>
+                            <span class="block absolute h-[3px] w-10 opacity-80 text-white bg-current transform transition duration-500 ease-in-out"
                                   :class="{'opacity-0': open } "></span>
-                            <span class="block absolute h-[1px] w-10 text-white bg-current transform  transition duration-500 ease-in-out"
-                                  :class="{'-rotate-45': open, ' translate-y-1.5': !open,'text-black': open}"></span>
+                            <span class="block absolute h-[3px] w-10 opacity-80 text-white bg-current transform  transition duration-500 ease-in-out"
+                                  :class="{'-rotate-45': open, ' translate-y-1.5': !open,' text-black': open, 'text-white': !open}"></span>
                         </div>
                     </button>
                 </nav>
             </div>
         </div>
-        <div x-show="open" class="fixed z-10 top-0 w-full h-full "
-             style="background-image: url('assets/images/desk_menu/bg.png');">
+        <div x-show="open" class="fixed z-30 top-0 w-full h-full "
+             style="background-image: url('assets/images/desk_menu/bg.png'); display: none">
             <div class="absolute top-16/48 left-36/48 cursor-pointer">
                 <img src="assets/images/desk_menu/m1.png"/>
             </div>
@@ -50,7 +51,7 @@
                 <img src="assets/images/desk_menu/m5.png"/>
             </div>
 
-<!--            peoples-->
+            <!--            peoples-->
             <div class="absolute top-10/48 left-39/48">
                 <img src="assets/images/desk_menu/people1.png"/>
             </div>
@@ -60,7 +61,7 @@
             <div class="absolute top-26/48 left-10/48">
                 <img src="assets/images/desk_menu/people3.png"/>
             </div>
-<!--            logo-->
+            <!--            logo-->
             <div class="absolute top-41/48 left-2/48">
                 <img src="assets/images/desk_menu/logo_fb.png"/>
             </div>
@@ -107,10 +108,15 @@
     </section>
     <section id="literature" class="z-0 relative overflow-hidden">
         <div class="relative flex sm:h-[3400px] md:h-[3400px] lg:h-[3400px] xl:h-[3400px]">
-            <div class="absolute top-24 left-0 lt_img_1">
-                <img src="assets/images/water_park_61.png"
-                     class="  w-full h-full object-contain">
+
+
+            <div class="absolute w-64 overflow-hidden top-1/12">
+                <div class="image-container w-full h-full transform-gpu hover:scale-110 transition-all duration-500">
+                    <img src="assets/images/water_park_61.png" alt="Image" class="w-full h-full object-cover filter blur hover:filter-none rotate-1 hover:rotate-0 hover:scale-100 transition-all duration-500" />
+                </div>
             </div>
+
+
             <div class="absolute top-0 left-7/12 sm:left-8/12 md:left-7/12 lg:left-7/12 xl:left-7/12 lt_img_2 ">
                 <img src="assets/images/junlin_1.png"
                      class=" w-full h-full object-contain">
@@ -264,9 +270,71 @@
     <section id="memory" class="relative">
         <div class="relative flex sm:h-[4550px] md:h-[3650px] lg:h-[5550px] xl:h-[6250px]">
             <div class="absolute  flex justify-center transform -translate-x-1/2 left-1/2  xl:left-1/2  w-46/48 ">
-                <div class="mem_img_12">
-                    <img src="assets/images/05_1.png" alt="圖片"
-                         class=" w-full h-full object-contain">
+                <div class="mem_img_12 absolute  w-full h-full object-contain">
+                    <div id="carousel01" class="relative w-full h-full" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-screen overflow-hidden rounded-lg md:h-screen">
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/05_1.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/05_2.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/05_3.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/05_4.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/05_5.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+
+                        </div>
+                        <!-- Slider indicators -->
+                        <!--                        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">-->
+                        <!--                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>-->
+                        <!--                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>-->
+                        <!--                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>-->
+                        <!--                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>-->
+                        <!--                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>-->
+                        <!--                        </div>-->
+                        <!-- Slider controls -->
+                        <button type="button"
+                                class="absolute top-96 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-15 h-15 rounded-full sm:w-10 sm:h-10 scale-200">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round"
+                                                                          stroke-width="2"
+                                                                          d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                        </button>
+                        <button type="button"
+                                class="absolute top-96 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-15 h-15 rounded-full sm:w-10 sm:h-10 scale-200">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"><path
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="absolute flex flex-wrap w-full justify-center transform -translate-x-1/2  top-8/48 left-1/2  md:top-6/48  xl:top-8/48 xl:left-1/2 ">
@@ -287,10 +355,59 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute  flex justify-center transform -translate-x-1/2 w-46/48 top-15/48 left-1/2  md:top-13/48 xl:top-15/48  xl:left-1/2  ">
-                <div class="mem_img_12 pt-12">
-                    <img src="assets/images/01_1.png" alt="圖片"
-                         class=" w-full h-full object-contain">
+            <div class="absolute  flex justify-center transform -translate-x-1/2 w-46/48 top-15/48 left-1/2  md:top-13/48 xl:top-16/48  xl:left-1/2  ">
+                <!--                    <img src="assets/images/01_1.png" alt="圖片"-->
+                <!--                         class=" w-full h-full object-contain">-->
+                <div class="mem_img_12 absolute  w-full h-full object-contain">
+                    <div id="carousel02" class="relative w-full h-full" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-screen overflow-hidden rounded-lg md:h-screen">
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/01_1.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/01_2.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/01_3.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/01_4.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                        </div>
+                        <button type="button"
+                                class="absolute top-96 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-15 h-15 rounded-full sm:w-10 sm:h-10 scale-200">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round"
+                                                                          stroke-width="2"
+                                                                          d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                        </button>
+                        <button type="button"
+                                class="absolute top-96 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-15 h-15 rounded-full sm:w-10 sm:h-10 scale-200">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"><path
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="absolute  flex justify-center transform -translate-x-1/2 top-24/48 left-1/2 md:top-19/48 xl:top-24/48 xl:left-1/2 ">
@@ -310,10 +427,54 @@
                 </div>
             </div>
             <div class="absolute  flex justify-center transform -translate-x-1/2  w-46/48 top-30/48 left-1/2 md:top-28/48 xl:top-30/48 xl:left-1/2 ">
-                <div class="mem_img_12">
-                    <img src="assets/images/livingroom.png" alt="圖片"
-                         class=" w-full h-full object-contain">
+
+                <div class="mem_img_12 absolute  w-full h-full object-contain">
+                    <div id="carousel03" class="relative w-full h-full" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-screen overflow-hidden rounded-lg md:h-screen">
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/02_1.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/02_2.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="assets/images/02_3.png"
+                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                     alt="...">
+                            </div>
+                        </div>
+                        <button type="button"
+                                class="absolute top-96 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-15 h-15 rounded-full sm:w-10 sm:h-10 scale-200">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round"
+                                                                          stroke-width="2"
+                                                                          d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                        </button>
+                        <button type="button"
+                                class="absolute top-96 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-15 h-15 rounded-full sm:w-10 sm:h-10 scale-200">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"><path
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                        </button>
+                    </div>
                 </div>
+
             </div>
             <div class="absolute flex flex-wrap w-full justify-center transform -translate-x-1/2 top-38/48 left-1/2 md:top-34/48 xl:top-38/48 xl:left-1/2 ">
                 <div class="flex justify-center  ">
@@ -378,6 +539,7 @@
     </footer>
 </div>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+<script src="./node_modules/flowbite/dist/flowbite.js"></script>
 <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzuazfEr3b3WWFfgj5QH6mExe_hklIh6M&callback=initMap&v=weekly"
         defer
@@ -394,6 +556,21 @@
     window.initMap = initMap;
     console.log("initMap");
 
+    function resizeImageContainers() {
+        const imageContainers = document.querySelectorAll('.image-container');
+
+        imageContainers.forEach((container) => {
+            const image = container.querySelector('img');
+            const imageAspectRatio = image.naturalWidth / image.naturalHeight;
+
+            const containerWidth = container.offsetWidth;
+            const containerHeight = containerWidth / imageAspectRatio;
+            container.style.paddingBottom = `${(containerHeight / containerWidth) * 100}%`;
+        });
+    }
+
+    window.addEventListener('resize', resizeImageContainers);
+    window.addEventListener('load', resizeImageContainers);
 </script>
 </body>
 </html>
