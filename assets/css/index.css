@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.blur-image {
+    filter: blur(10px); /* 初始模糊度 */
+    transition: filter 0.8s ease-in-out; /* 添加过渡效果 */
+    transform: scale(1.5); /* 放大图片 */
+}
+
+.clear-image {
+    filter: blur(0); /* 清晰度 */
+    transition: filter 1s ease-in-out; /* 添加过渡效果 */
+}
+
+.image-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.image-item {
+    object-fit: cover; /* 图片按比例缩放，覆盖整个框框 */
+    transition: transform 1s ease-in-out, filter 1s ease-in-out;
+}
+
+.image-item.blur-image {
+    filter: blur(8px); /* 初始模糊效果 */
+}
+
+.image-item.clear-image {
+    filter: blur(0); /* 清晰效果 */
+    transform: scale(1); /* 初始放大效果 */
+}
+
+
+.enlarge-image {
+    /*transform: scale(1.5); !* 放大图片 *!*/
+}
+
+
+.loader {
+    border-top-color: #a5a5a5;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+    opacity: 1;
+}
+#loading-screen {
+    /* 加载画面的样式 */
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
