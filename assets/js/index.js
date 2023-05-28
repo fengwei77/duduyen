@@ -27,6 +27,7 @@ window.addEventListener('resize', resizeImageContainers);
 window.addEventListener('load', resizeImageContainers);
 
 // 创建一个观察者对象
+anima_time = 500;
 var observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(function(entry) {
         // 检查图片元素是否进入视口
@@ -35,15 +36,17 @@ var observer = new IntersectionObserver(function(entries, observer) {
             setTimeout(()=>{
                 entry.target.classList.add('clear-image');
                 entry.target.classList.remove('blur-image');
-            },200);
+                entry.target.classList.remove('blur-image2');
+            },anima_time);
             // 停止观察该图片元素
             observer.unobserve(entry.target);
+            anima_time = 200;
         }
     });
 });
 
 // 选择所有图片元素
-var images = document.querySelectorAll('.blur-image');
+var images = document.querySelectorAll('.image-item');
 
 // 为每个图片元素添加观察者
 images.forEach(function(image) {
@@ -63,3 +66,29 @@ window.addEventListener('load', function() {
         loadingScreen.style.display = 'none';
     }, 500); // 500 毫秒是淡出动画的持续时间
 });
+
+
+window.addEventListener('scroll', handleScroll);
+
+// 定义标志变量
+let isScrolling = false;
+
+// 滚动事件处理函数
+function handleScroll() {
+    // 如果正在滚动，立即返回
+    if (isScrolling) {
+        return;
+    }
+
+    // 设置标志变量为 true
+    isScrolling = true;
+
+    // 执行您需要的动作
+    // 例如，触发一次动作或调用特定函数
+    console.log('屏幕滚动时执行动作');
+
+    // 在适当的时间后重置标志变量
+    setTimeout(function() {
+        isScrolling = false;
+    }, 500); // 设置延迟时间，确保在 500 毫秒后重置标志变量
+}

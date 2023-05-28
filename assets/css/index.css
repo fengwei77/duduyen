@@ -8,6 +8,12 @@ html {
     transform: scale(1.5); /* 放大图片 */
 }
 
+.blur-image2 {
+    filter: blur(10px); /* 初始模糊度 */
+    transition: filter 0.8s ease-in-out; /* 添加过渡效果 */
+}
+
+
 .clear-image {
     filter: blur(0); /* 清晰度 */
     transition: filter 1s ease-in-out; /* 添加过渡效果 */
@@ -67,4 +73,8 @@ html {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.max-w-custom {
+    max-width: 200px; /* 您可以设置所需的最大宽度值 */
 }
