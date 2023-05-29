@@ -20,7 +20,7 @@
         <!--             class=" w-full h-full object-contain">-->
     </div>
 </div>
-<div class="bg-cover bg-no-repeat  md:bg-[url('../assets/images/bg.jpg')] sm: bg-[url('../assets/images/mobile/bg.jpg')]"
+<div class="bg-cover bg-no-repeat md:bg-[center_bottom_20rem] xl:bg-[center_bottom_15rem] 2xl:bg-[center_bottom_1rem]  md:bg-[url('../assets/images/bg.jpg')] sm: bg-[url('../assets/images/mobile/bg.jpg')]"
      x-data="{ open: false }">
     <section id="menu">
         <div class="fixed z-40 w-full">
@@ -43,31 +43,35 @@
             <div class="w-full h-full opacity-[0.88]"
                  style="background-image: url('assets/images/desk_menu/bg.png');">
             </div>
-            <div class="absolute top-16/48 left-36/48 cursor-pointer">
-                <a href="#literature" @click="open = !open"><img src="assets/images/desk_menu/m1.png"/></a>
+            <div class="absolute sm:top-10/48  sm:left-35/48 md:top-16/48 md:left-36/48 cursor-pointer">
+                <a href="#literature" @click="open = !open"><img src="assets/images/desk_menu/m1.png"
+                                                                 class="sm:w-10/12 md:w-full"/></a>
             </div>
-            <div class="absolute top-16/48 left-30/48 cursor-pointer">
-                <a href="#story" @click="open = !open"><img src="assets/images/desk_menu/m2.png"/></a>
+            <div class="absolute sm:top-10/48 sm:left-28/48 md:top-16/48 md:left-30/48 cursor-pointer">
+                <a href="#story" @click="open = !open"><img src="assets/images/desk_menu/m2.png"
+                                                            class="sm:w-10/12 md:w-full"/></a>
             </div>
-            <div class="absolute top-16/48 left-24/48 cursor-pointer">
-                <a href="#architect" @click="open = !open"><img src="assets/images/desk_menu/m3.png"/></a>
+            <div class="absolute sm:top-10/48 sm:left-21/48 md:top-16/48 md:left-24/48 cursor-pointer">
+                <a href="#architect" @click="open = !open"><img src="assets/images/desk_menu/m3.png"
+                                                                class="sm:w-10/12 md:w-full"/></a>
             </div>
-            <div class="absolute top-16/48 left-18/48 cursor-pointer">
-                <a href="#memory" @click="open = !open"><img src="assets/images/desk_menu/m4.png"/></a>
+            <div class="absolute sm:top-10/48 sm:left-14/48 md:top-16/48 md:left-18/48 cursor-pointer">
+                <a href="#memory" @click="open = !open"><img src="assets/images/desk_menu/m4.png"
+                                                             class="sm:w-10/12 md:w-full"/></a>
             </div>
-            <div class="absolute top-16/48 left-12/48 cursor-pointer">
-                <a href="#contact" @click="open = !open"><img src="assets/images/desk_menu/m5.png"/></a>
+            <div class="absolute sm:top-10/48 sm:left-7/48 md:top-16/48 md:left-12/48 cursor-pointer">
+                <a href="#contact" @click="open = !open"><img src="assets/images/desk_menu/m5.png" class="sm:w-10/12 md:w-full"/></a>
             </div>
 
             <!--            peoples-->
-            <div class="absolute top-10/48 left-39/48">
-                <img src="assets/images/desk_menu/people1.png"/>
+            <div class="absolute sm:top-5/48  sm:left-37/48 top-10/48 left-39/48">
+                <img src="assets/images/desk_menu/people1.png" class="sm:w-2/3"/>
             </div>
-            <div class="absolute top-33/48 left-41/48">
-                <img src="assets/images/desk_menu/people2.png"/>
+            <div class="absolute sm:top-34/48 sm:left-39/48 top-33/48 left-41/48">
+                <img src="assets/images/desk_menu/people2.png" class="sm:w-2/3"/>
             </div>
-            <div class="absolute top-26/48 left-10/48">
-                <img src="assets/images/desk_menu/people3.png"/>
+            <div class="absolute sm:top-24/48 sm:left-6/48 top-26/48 left-10/48">
+                <img src="assets/images/desk_menu/people3.png" class="sm:w-2/3"/>
             </div>
             <!--            logo-->
             <div class="absolute top-41/48 left-2/48">
@@ -123,7 +127,7 @@
             </div>
             <div class="absolute pt-12 top-1/3 left-1/2  transform -translate-x-1/2">
                 <img src="assets/images/mobile/center_logo.png"
-                     class="h-auto   w-full h-full object-contain ">
+                     class="w-full h-full object-contain ">
             </div>
         </div>
 
@@ -143,7 +147,7 @@
                          class=" w-full h-full object-contain  blur-image image-item">
                 </div>
             </div>
-            <div class="absolute  top-1/12 left-9/12 lt_img_3 sm:w-16/48  sm:top-4/48 sm:left-33/48 xl:top-2/24 xl:left-9/12">
+            <div class="absolute  top-1/12 left-9/12 lt_img_3 sm:w-16/48  sm:top-4/48 sm:left-33/48 md:top-2/24 md:left-9/12 xl:top-2/24 xl:left-9/12">
                 <div class="flex justify-center image-wrapper">
                     <img src="assets/images/coffee_house.png"
                          class=" md:max-w-[220px]  lg:max-w-[267px] xl:max-w-full object-contain  blur-image image-item">
@@ -163,20 +167,20 @@
             </div>
             <div class="absolute top-6/24 left-18/24  sm:top-3/48 sm:left-21/48 md:top-6/24 md:left-20/24 xl:top-6/24 xl:left-18/24">
                 <img src="assets/images/p_txt_1.png"
-                     class="sm:w-25/48 md:w-40/48 w-full h-full object-contain ">
+                     class="sm:w-25/48 md:w-40/48 lg:w-full h-full object-contain ">
             </div>
             <div class="absolute  top-25/48 left-6/24  sm:top-14/48 sm:left-7/48 xl:top-25/48 xl:left-6/24">
                 <img src="assets/images/p_txt_2.png"
-                     class="sm:w-25/48 md:w-40/48 w-full h-full object-contain ">
+                     class="sm:w-25/48 md:w-40/48 lg:w-full h-full object-contain ">
             </div>
             <div class="absolute top-34/48 left-10/12 sm:top-29/48 sm:left-32/48 xl:top-35/48 xl:left-10/12">
                 <img src="assets/images/p_txt_3.png"
-                     class="sm:w-28/48 md:w-40/48 w-full h-full object-contain ">
+                     class="sm:w-28/48 md:w-40/48 lg:w-full h-full object-contain ">
             </div>
-            <div class="absolute z-30 sm:w-20/48 top-16/48 left-5/48 sm:top-11/48 sm:left-4/48  xl:top-16/48 xl:left-5/48 ">
+            <div class="absolute z-30 sm:w-20/48 top-16/48 left-5/48 sm:top-11/48 sm:left-4/48  md:top-12/48 xl:top-16/48 xl:left-5/48 ">
                 <div class="flex justify-center image-wrapper">
                     <img src="assets/images/water_park_111.png" alt="樹枝小黃花"
-                         class=" w-full h-full object-contain blur-image image-item">
+                         class="sm:w-28/48 md:w-29/48 w-full h-full object-contain blur-image image-item">
                 </div>
             </div>
             <div class="absolute z-20 h-auto sm:w-33/48 md:w-20/48 lg:w-22/48 lt_img_5 top-8/48 left-12/48 sm:top-8/48 sm:left-16/48 xl:top-8/48 xl:left-12/48">
@@ -204,11 +208,11 @@
                          class=" sm:max-w-[180px] md:max-w-[280px]  lg:max-w-[330px] xl:max-w-full object-contain blur-image image-item  ">
                 </div>
             </div>
-            <div class="absolute z-20 lt_img_9 top-30/48 left-28/48  sm:top-22/48 sm:left-35/48  md:top-28/48 xl:top-30/48 xl:left-28/48  ">
+            <div class="absolute z-20 lt_img_9 top-30/48 left-28/48  sm:top-22/48 sm:left-35/48  md:top-22/48  md:left-32/48  lg:top-30/48  xl:top-30/48 xl:left-28/48  ">
 
                 <div class="flex justify-center image-wrapper">
                     <img src="assets/images/junlin_37.png" alt="山間路"
-                         class=" sm:max-w-[150px]   w-full h-full object-contain blur-image image-item  ">
+                         class=" sm:max-w-[150px]  md:max-w-[280px] w-full h-full object-contain blur-image image-item  ">
                 </div>
             </div>
             <div class="absolute flex flex-wrap justify-center transform -translate-x-1/2 top-40/48 left-1/2
@@ -236,10 +240,10 @@
                          class="sm:max-w-[180px] md:max-w-[370px]  lg:max-w-[440px] xl:max-w-full  object-contain blur-image image-item  ">
                 </div>
             </div>
-            <div class="absolute top-2/48 left-28/48 sm:top-0 sm:left-0 xl:top-2/48 xl:left-28/48  sm:hidden md:block">
+            <div class="absolute top-2/48 left-28/48 xl:top-2/48 xl:left-28/48  sm:hidden md:inline-block">
                 <div class="flex justify-center image-wrapper">
                     <img src="assets/images/fuga_lane_25.png" alt="孔中看廟"
-                         class=" md:max-w-[280px]  lg:max-w-[300px] xl:max-w-full  object-contain blur-image image-item  ">
+                         class=" md:max-w-[250px]  lg:max-w-[300px] xl:max-w-full  object-contain blur-image image-item  ">
                 </div>
             </div>
             <div class="absolute top-2/48 left-28/48 sm:top-0 sm:left-9/12 xl:top-2/48 xl:left-28/48 sm:block md:hidden ">
@@ -248,14 +252,14 @@
                          class="sm:max-w-[100px]  object-contain blur-image image-item  ">
                 </div>
             </div>
-            <div class="absolute st_img_3 top-1/48 left-40/48 sm:top-2/48 sm:left-24/48 md:left-42/48 xl:top-1/48 xl:left-40/48">
+            <div class="absolute st_img_3 top-1/48 left-40/48 sm:top-2/48 sm:left-24/48 md:left-45/48 xl:top-1/48 xl:left-42/48 2xl:left-42/48">
                 <img src="assets/images/story_3.png"
-                     class="sm:max-w-[50px] w-full h-full  md:w-10/12 object-contain ">
+                     class="sm:max-w-[50px] md:max-w-full h-full  md:w-10/12  lg:w-full xl:w-full object-contain ">
             </div>
             <div id="story"
                  class="absolute flex flex-wrap justify-center transform -translate-x-1/2 top-12/48 left-1/2
                    sm:top-9/48 sm:left-24/48 xl:top-12/48 xl:left-1/2   pt-12">
-                <div class="sm:w-[300px] w-[700px] flex justify-center flex-wrap ">
+                <div class="sm:w-[300px] md:w-[700px] flex justify-center flex-wrap ">
                     <div class="st_img_4 mb-[100px]">
                         <img src="assets/images/story_4.png"
                              class=" w-full h-full object-contain ">
@@ -272,12 +276,12 @@
             </div>
 
 
-            <div class="absolute flex justify-center flex-wrap w-full h-4/12  sm:top-27/48 xl:top-24/48">
-                <div class="border-2 border-gray-900 w-full  sm:w-2/2 sm:h-1/2 md:w-11/12 lg:w-11/12 xl:w-46/48"></div>
+            <div class="absolute flex justify-center flex-wrap w-full h-4/12  sm:top-27/48 md:top-27/48 xl:top-24/48">
+                <div class="border-2 border-gray-900 w-full  sm:w-2/2 sm:h-1/2 md:h-2/3 lg:h-full md:w-11/12 lg:w-11/12 xl:w-46/48"></div>
                 <img src="assets/images/illus.png" alt="插畫地圖"
-                     class="illus  absolute  sm:top-2/12 top-1/2 xl:top-1/2 ">
+                     class="illus  absolute  sm:top-2/12 md:top-1/3 lg:top-1/2 xl:top-1/2 ">
             </div>
-            <div class="absolute  flex justify-center flex-wrap top-42/48 left-1/2 sm:top-38/48 xl:top-44/48 xl:left-1/2 ">
+            <div class="absolute  flex justify-center flex-wrap top-42/48 left-1/2 sm:top-38/48  md:top-40/48 lg:top-44/48 xl:top-44/48 xl:left-1/2 ">
                 <div class="lt_img_12 pt-12">
                     <img src="assets/images/h_line.png"
                          class=" w-full h-full object-contain ">
@@ -307,15 +311,15 @@
 
                 <div class="flex justify-center image-wrapper rounded-full	">
                     <img src="assets/images/architect_avat.png" alt="圖片"
-                         class=" w-full h-full object-contain blur-image image-item">
+                         class=" sm:w-[250px] md:w-[300px] lg:w-full w-full h-full object-contain blur-image image-item">
                 </div>
             </div>
             <div id="architect"
-                 class="absolute   pt-12 flex justify-center transform -translate-x-1/2 top-26/48  left-1/2 xl:top-28/48 xl:left-1/2">
+                 class="absolute   pt-12 flex justify-center transform -translate-x-1/2 top-26/48  left-1/2 lg:top-28/48 xl:top-27/48 xl:left-1/2">
                 <img src="assets/images/architect_3.png" alt="圖片"
                      class=" w-full h-full object-contain ">
             </div>
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 top-36/48 left-1/2 top-37/48 xl:left-1/2">
+            <div class="absolute  transform -translate-x-1/2 top-36/48 left-1/2 xl:top-36/48 xl:left-1/2">
                 <div class="sm:w-[320px] md:w-[750px] w-[800px] flex justify-center flex-wrap">
                     <div class="lt_img_12 pt-12">
                         <img src="assets/images/architect_4.png" alt="圖片"
@@ -401,19 +405,19 @@
             </div>
             <div class="absolute flex flex-wrap  w-full justify-center transform -translate-x-1/2  top-10/48 left-1/2  sm:top-6/48 md:top-9/48  xl:top-8/48 xl:left-1/2 ">
                 <div class="sm:flex-col  md:flex-row flex  justify-center">
-                    <div class="m_sketch_1 flex-auto sm:pl-0 md:pl-10 lg:pr-20">
-                        <img src="assets/images/m_sketch_1.png" alt="圖片" class="sm:w-full md:w-42/48">
+                    <div class="m_sketch_1 flex-auto sm:pl-0 md:pl-10 lg:pr-5">
+                        <img src="assets/images/m_sketch_1.png" alt="圖片" class="sm:w-full md:w-42/48 lg:w-full">
                     </div>
-                    <div class=" flex-auto justify-center sm:pl-1/12">
-                        <img src="assets/images/m_sketch_txt_1.png" alt="圖片" class="sm:w-40/48 md:w-42/48">
+                    <div class=" flex-auto justify-center sm:pl-1/12 md:pl-0">
+                        <img src="assets/images/m_sketch_txt_1.png" alt="圖片" class="sm:w-40/48 md:w-42/48 lg:w-full">
                     </div>
                 </div>
                 <div class="flex  sm:flex-col sm:flex-col-reverse  md:flex-row flex justify-center ">
                     <div class="flex-auto sm:pt-10 md:pl-10 lg:pr-20  sm:pl-1/12">
-                        <img src="assets/images/m_sketch_txt_2.png" alt="圖片" class="sm:w-40/48 md:w-42/48">
+                        <img src="assets/images/m_sketch_txt_2.png" alt="圖片" class="sm:w-40/48 md:w-42/48 lg:w-full">
                     </div>
                     <div class="m_sketch_2 image-wrapper justify-center sm:pt-2 ">
-                        <img src="assets/images/m_sketch_2.png" alt="圖片" class="sm:w-full md:w-42/48">
+                        <img src="assets/images/m_sketch_2.png" alt="圖片" class="sm:w-full md:w-42/48 lg:w-full">
                     </div>
                 </div>
             </div>
@@ -472,7 +476,7 @@
             </div>
             <div id="memory"
                  class="absolute z-30 flex justify-center transform -translate-x-1/2 top-24/48 left-1/2 sm:top-22/48  md:top-23/48 xl:top-24/48 xl:left-1/2 ">
-                <div class="sm:w-[320px] w-[800px] flex justify-center flex-wrap">
+                <div class="sm:w-[320px] md:w-[600px] w-[800px]  flex justify-center flex-wrap">
                     <div class="pt-12 sm:hidden md:block">
                         <img src="assets/images/m_txt_1.png" alt="圖片"
                              class="w-full h-full object-contain ">
@@ -491,7 +495,7 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute  flex justify-center transform -translate-x-1/2 pt-2  w-46/48 top-30/48 left-1/2 sm:top-25/48  md:top-29/48 xl:top-29/48 xl:left-1/2 ">
+            <div class="absolute  flex justify-center transform -translate-x-1/2 pt-2  w-46/48 top-30/48 left-1/2 sm:top-25/48  md:top-27/48  lg:top-29/48  xl:top-29/48 xl:left-1/2 ">
                 <div class="mem_img_12 absolute  w-full h-full object-contain ">
                     <div id="carousel03" class="relative w-full h-full" data-carousel="slide">
                         <!-- Carousel wrapper -->
@@ -540,7 +544,7 @@
                 </div>
 
             </div>
-            <div class="absolute flex flex-wrap w-full justify-center transform -translate-x-1/2 top-38/48 left-1/2 md:top-37/48 xl:top-37/48 xl:left-1/2 sm:hidden md:block">
+            <div class="absolute flex flex-wrap w-full justify-center transform -translate-x-1/2 top-38/48 left-1/2 md:top-37/48 xl:top-37/48 xl:left-1/2 sm:hidden md:inline-flex">
                 <div class="flex justify-center  ">
                     <div class="relative  flex-auto mr-6 image-wrapper">
                         <img src="assets/images/room1.png" alt="圖片"
@@ -559,14 +563,14 @@
                              class=" w-full h-full object-contain   blur-image image-item">
                     </div>
                 </div>
-                <div class="absolute flex justify-center top-46/48 left-21/48 md:top-46/48 md:left-16/48 xl:top-45/48 xl:left-26/48 ">
+                <div class="absolute flex justify-center top-46/48 left-21/48 md:top-46/48 md:left-16/48 xl:top-45/48 xl:left-21/48 2xl:left-23/48">
                     <div class="room3  image-wrapper">
                         <img src="assets/images/room3.png" alt="圖片"
                              class=" w-full h-full object-contain   blur-image image-item">
                     </div>
                 </div>
             </div>
-            <div class="absolute flex flex-row h-auto w-full justify-center transform -translate-x-1/2  left-1/2 sm:top-34/48 xl:top-38/48 xl:left-1/2 sm:block md:hidden">
+            <div class="absolute flex flex-row h-auto w-full justify-center transform -translate-x-1/2  left-1/2 sm:top-34/48 xl:top-38/48 xl:left-30/48 sm:block md:hidden">
                 <div class="mt-6 image-wrapper">
                     <img src="assets/images/mobile/room_txt_1.png" alt="圖片" class="px-4">
                 </div>
@@ -586,7 +590,7 @@
                 </div>
             </div>
 
-            <div class="absolute sm:w-[150px] flex justify-center top-46/48 left-21/48 sm:top-44/48 sm:left-6/48 ">
+            <div class="absolute sm:w-[150px]  flex justify-center top-46/48 left-21/48 sm:top-44/48 sm:left-6/48 sm:block md:hidden">
                 <div class="room3  image-wrapper">
                     <img src="assets/images/mobile/room3.png" alt="圖片"
                          class=" w-full h-full object-contain   blur-image image-item">
@@ -610,15 +614,15 @@
     </section>
 
     <footer id="footer" class="relative bg-white flex">
-        <div class="relative flex h-[140px] md:h-[180px]  xl:h-[280px] overflow-hidden sm:hidden md:block">
-            <div class="relative xl:w-4/12 pt-10 pl-4 md:pt-12  md:pl-20 xl:pt-20  xl:pl-20">
-                <div class="absolute md:pt-1 xl:pt-2 left-3/12">
+        <div class="relative flex h-[140px] md:-[180px]  xl:h-[280px] overflow-hidden sm:hidden md:inline-flex">
+            <div class="relative pt-10 pl-4 md:pt-12  md:pl-20 xl:pt-20  xl:pl-20 ">
+                <div class="absolute md:pt-1 xl:pt-2 left-11/12">
                     <a href="https://www.google.com/" target="_blank">
                         <img src="assets/images/facebook.png" class="w-full h-full object-contain ">
                     </a>
                 </div>
                 <div class="">
-                    <img src="assets/images/footer_left.png" class="w-[287px] h-full object-contain ">
+                    <img src="assets/images/footer_left.png" class="w-full h-full object-contain ">
                 </div>
             </div>
             <div class="relative pt-10 pl-4 md:pt-12 md:pl-20 xl:pt-20  xl:pl-20">
@@ -632,13 +636,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="relative flex sm:h-[300px]   overflow-hidden sm:block md:hidden">
+        <div class="relative flex sm:h-[350px]   overflow-hidden sm:inline-block	 md:hidden">
             <div class="relative w-full">
                 <img src="assets/images/mobile/footer_info.png" class="  sm:pt-4 sm:pl-2 sm:pr-1 object-contain ">
             </div>
             <div class="relative w-full  flex justify-center">
-                <img src="assets/images/mobile/footer_logo_dudu.png" class="  sm:pt-4 sm:pl-2 sm:pr-1 object-contain ">
+                <img src="assets/images/mobile/footer_logo_dudu.png"
+                     class="  sm:pt-4 sm:pl-2 sm:pr-1 object-contain ">
             </div>
             <div class="relative w-full  flex justify-center">
                 <a href="https://www.google.com/" target="_blank">
@@ -651,10 +655,10 @@
             </div>
 
             <div class="relative w-full  flex justify-center">
-                <img src="assets/images/mobile/footer_company.png" class="  sm:pt-4 sm:pl-2 sm:pr-1 object-contain ">
+                <img src="assets/images/mobile/footer_company.png"
+                     class="  sm:pt-4 sm:pl-2 sm:pr-1 object-contain ">
             </div>
         </div>
-
     </footer>
 </div>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
